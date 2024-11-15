@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87ef87ad52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="fondo">    
+            <img src="../imagenes/serendipia.jpg" width="200" height="200"  alt="logo" id="logo">
+        </div>
+    </header>
+
+    <div>
+        <h1>
+            Contacto 
+        </h1>
+    </div>
+
+    <nav class="navegador">
+        <ul>
+            <li>
+                <a href="./index.html" class="nav-enlace">Home</a>
+            </li>
+            
+            <li>
+                <a href="./productos.html" class="nav-enlace">Productos</a>
+            </li>
+           
+            <li>
+                <a href="./resenias.html" class="nav-enlace">Reseñas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>
+            Formulario de Contacto
+        </h2>
+        <p class="subtitulo">
+            Completa el siguiente formulario con tu información personal.
+        </p>
+        
+        <form action="https://formsubmit.co/lm.sarmiento85@gmail.com" method="post" id="formulario">
+            <fieldset class="marco-formulario">
+                <legend class="subtitulo" id="leyenda">
+                    Datos de Contacto
+                </legend>
+            
+                <div class="campos">
+                    <label for="nombre">
+                        Nombre:
+                    </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan" required>
+                    
+
+                </div>
+                <div class="campos" >
+                    <label for="apellido">
+                        Apellido:
+                    </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Perez" required>
+                </div>
+                <div class="campos">
+                    <label for="fecha-nacimiento">
+                        Fecha de Nacimiento:
+                    </label>
+                    <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+                </div>
+            
+                <div class="campos" >
+                    <label for="genero">Género: </label>
+                    <input type="radio" name="genero" id="genero" value="femenino">Femenino
+                    <input type="radio" name="genero" id="genero" value="masculino">Masculino
+                    <input type="radio" name="genero" id="genero" value="otro">Otro
+                </div>
+                <div class="campos">
+                    <label for="nacionalidad">Nacionalidad: </label>
+                    <input type="text" name="nacionalidad" id="nacionalidad" placeholder="Argentino">
+
+                </div>
+                <div class="campos">
+                    <label for="estudios">Nivel de estudio alcanzado: </label>
+                    <select name="estudios" id="estudios">
+                        <option value=""></option>
+                        <option value="primario-incompleto">Primario Incompleto</option>
+                        <option value="primario-completo">Primario Completo</option>
+                        <option value="secundario-incompleto">Secundario Incompleto</option>
+                        <option value="secundario-completo">Secundario Completo</option>
+                        <option value="terciario-incompleto">Terciario Incompleto</option>
+                        <option value="terciario-completo">Terciario Completo</option>
+                        <option value="universitario-incompleto">Universitario Incompleto</option>
+                        <option value="universitario-completo">Universitario Completo</option>
+                    </select>
+                    
+                    
+                    
+                </div>
+                <div class="campos">
+                    <label for="email">Correo electrónico: </label>
+                    <input type="email" name="email" id="email" placeholder="juanperez@mail.com" required>
+                </div>
+                <div class="campos">
+                    <label for="consulta">Consulta: </label>
+                    <textarea name="consulta" id="consulta" placeholder="Escribe aquí tu consulta..." rows="5" cols="40"></textarea>
+                </div>
+            
+                <div id="boton-enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>    
+        </form>
+    </main>
+    <footer id="footer-mapa" >
+        <div >
+            <p class="subtitulo">
+                Dónde encontrar nuestro Showroom:
+            </p>
+            <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2712559362317!2d-58.57481962453413!3d-34.4198643478114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcaf85fc57e31b%3A0xdcc1ea16cdfc1418!2sPuerto%20de%20Frutos!5e0!3m2!1ses-419!2sar!4v1731660281080!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div>
+            <p id="redes">
+                Seguinos en redes:  
+                <button 
+                    type="submit" i class="fa-brands fa-instagram" id="ig">
+                </button>
+                <button 
+                    type="submit" i class="fa-brands fa-facebook" id="ig">
+                </button>
+                <button 
+                    type="submit" i class="fa-brands fa-twitter" id="ig">
+                </button>
+            </p>
+
+        </div>
+    </footer>
+</body>
+</html>

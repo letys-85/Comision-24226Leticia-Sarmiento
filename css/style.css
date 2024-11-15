@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mistyrose;
+    border-top: solid 20px mistyrose;
+    border-bottom: solid mistyrose 20px;
+     }
+
+#logo {
+    border-radius: 10em;
+    
+}
+
+h1 {
+    display: inline;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid mistyrose;
+    background-color: lightpink;
+    font-size: medium;
+    color: beige;
+}
+
+main > h2 {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: lightpink
+    
+}
+
+.nav-enlace {
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: lightpink;
+    padding: 5px 30px;
+
+}
+.nav-enlace:hover {
+    background-color: pink;
+    color: hotpink;
+}
+
+body{
+    background-color: mistyrose;
+    border-color: mistyrose;
+}
+
+
+.parrafo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 100px;
+    border: 5px solid lightpink;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: larger;
+    color: hotpink;
+    background-color: mistyrose;
+}
+
+.subtitulo-productos {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.productos {
+    margin-top: 30px;
+    margin-left: 20px;
+    }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ 
+.card {
+    
+    margin: 10px;
+    border: 5px solid black;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.card .footer {
+    background-color: lightcoral;
+    padding: 1
+}
+
+form {
+    display: flexbox;
+    margin: 20px;
+}
+
+.subtitulo {
+    margin: 20px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#leyenda {
+    padding: 5px;
+    background-color: lightpink;
+    border-radius: 50px;
+    color: whitesmoke;
+}
+
+#formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.campos {
+    margin: 30px;
+}
+
+.marco-formulario {
+    border: solid; border-color: lightpink;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+#boton-enviar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+main > h2 {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background-color: lavender;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.resenia {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: 600;
+}
+
+
+.comentario > p {
+    font-family: sans-serif;
+    font-style: italic;
+    color: darkslategrey;
+    padding: 20px;
+
+}
+
+.antiguedad {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: grey;
+    
+    
+}
+
+
+@media screen and (min-width: 300px) {
+    .comentarios {
+        margin: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .comentarios {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 25% 25%;
+        grid-template-rows: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 10px;
+    }
+    }
+    
+
+    
+
+
+.comentario {
+    /* margin: 10px; */
+    border: 5px solid mistyrose;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+#resenia-1 {
+    grid-column: 1 / span 2;
+
+}
+
+#resenia-6 {
+    grid-column: 1 / span 2;
+
+}
+
+.pie {
+    margin: 10px;
+    margin-top: 40px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hotpink;
+
+
+}
+
+#ig:hover {
+    font-size: larger;
+    background-color: lightpink;
+
+}
+
+.mapa {
+    margin: 20px;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+#redes {
+    margin: 20px;
+}
+@media screen and (min-width: 768px) {
+    #footer-mapa {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
