@@ -1,0 +1,29 @@
+[
+    {
+    "id":1,
+    "producto":"Sillón Noruega",
+    "precio":125000,
+    "categoría":"muebles",
+    "subcategoria":"sillones",
+    "descripcion":"...",
+    "imagen":"./imagenes/silla.jpg"
+    },
+    {
+    "id":2,
+    "producto":"Sillón Dinamarca",
+    "precio":135000,
+    "categoría":"muebles",
+    "subcategoria":"sillones",
+    "descripcion":"...",
+    "imagen":"./imagenes/silla-2.jpg"
+    },
+    {
+        "id":3,
+        "producto":"Mecedora Finlandia",
+        "precio":145000,
+        "categoría":"muebles",
+        "subcategoria":"sillones",
+        "descripcion":"...",
+        "imagen":"./imagenes/silla-3.jpg"
+    }
+]

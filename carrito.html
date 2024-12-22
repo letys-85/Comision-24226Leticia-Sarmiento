@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tabla-carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="fondo">    
+            <img src="./imagenes/serendipia.jpg" width="200" height="200"  alt="logo" id="logo">
+        </div>
+    </header>
+
+    <div>
+        <h1>
+            <i class="fa-solid fa-cart-shopping" id="carro"></i>
+        </h1>
+       
+    </div>
+
+    <nav class="navegador">
+        <ul>
+            <li>
+                <a href="./index.html" class="nav-enlace">Home</a>
+            </li>
+            
+            <li>
+                <a href="./resenias.html" class="nav-enlace">Reseñas</a>
+            </li>
+           
+            <li>
+                <a href="./productos.html" class="nav-enlace">Productos</a>
+            </li>
+
+            <li>
+                <a href="./contacto.html" class="nav-enlace">Contacto</a>
+            </li>
+            
+        </ul>
+
+    </nav>
+    <main>
+      <h2 class="carrito" >
+        Carrito
+      </h2>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody class="listado-productos">
+            <tr data-id="">
+              <td>Nombre</td>
+              <td>Cantidad</td>
+              <td>Precio</td>
+              <td>Subtotal</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </section>
+      </main>
+  
+    <script src="https://kit.fontawesome.com/87ef87ad52.js" crossorigin="anonymous"></script>
+      <script src="./JS/carrito.js"></script>
+</body>
+</html>

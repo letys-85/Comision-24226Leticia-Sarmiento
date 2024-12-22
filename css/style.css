@@ -77,6 +77,16 @@ nav {
     color: hotpink;
 }
 
+#carro {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+a > #carro:hover {
+    background-color: pink;
+    color: hotpink;
+}
+
 body{
     background-color: mistyrose;
     border-color: mistyrose;
@@ -262,7 +272,11 @@ main > h2 {
 
 }
 
-#ig:hover {
+a {
+    text-decoration: none;
+}
+
+#ig:hover,#face:hover,#x-icon:hover {
     font-size: larger;
     background-color: lightpink;
 
