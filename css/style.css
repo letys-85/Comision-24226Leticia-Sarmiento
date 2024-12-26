@@ -87,6 +87,16 @@ a > #carro:hover {
     color: hotpink;
 }
 
+.contador {
+    color: whitesmoke;
+    background-color:hotpink;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50%;
+    }
+
+
 body{
     background-color: mistyrose;
     border-color: mistyrose;

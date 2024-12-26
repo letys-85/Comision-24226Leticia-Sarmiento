@@ -1,28 +1,24 @@
-/* let listadoProductos = JSON.parse(localStorage.getItem("carrito")) || [];
-
-console.log(listadoProductos);
-
-const section = document.querySelector(".listado-productos");
-
-    section.innerHTML = "";
-
-        listadoProductos.forEach((item) => {
-            const html = `
-                    
-                    <tr data-id="${item.id}">
-                        <td>${item.nombre}</td>
-                        <td>${item.cantidad}</td>
-                        <td>$ ${item.precio}</td>
-                        <td>$ ${item.precio * item.cantidad}</td>
-                     </tr>
-                    `;
-        section.innerHTML += html;
-
-            
-        }); */
 
 let listadoProductos = JSON.parse(localStorage.getItem("carrito")) || [];
 console.log(listadoProductos);
+
+function contarProductos () {
+    let contador = 0;
+    const contadorElemento = document.querySelector("span.contador");
+    // Verifica si el elemento existe antes de intentar actualizarlo 
+    if (!contadorElemento) { 
+        console.error("Elemento con clase '.contador' no encontrado en el DOM."); 
+        return; }
+    if (listadoProductos.length === 0) {
+        contadorElemento.innerHTML = contador;    
+    } else {
+        listadoProductos.forEach(producto =>{
+            contador++;
+            contadorElemento.innerHTML = contador;
+    });
+    
+    };
+};
 
 const section = document.querySelector(".listado-productos");
 
@@ -54,12 +50,12 @@ function listarCarrito() {
                     </tr>
                 `;
     section.innerHTML += html;
-
-        
-    })
+    });
+    contarProductos();
 };
 
 listarCarrito();
+
 
 
 function actualizarCantidad(tdCantidad, elemento) {
@@ -71,8 +67,9 @@ function actualizarCantidad(tdCantidad, elemento) {
     <button class="restar"> 
         <i class="fa-solid fa-square-minus"></i> 
     </button>
-    `
-};
+    `;
+    contarProductos();
+}
 
 
 document.addEventListener("click",(event) =>{
@@ -119,17 +116,17 @@ console.log("Evento de click detectado", event.target);
             actualizarCantidad(tdCantidad,elemento);
             };
 
-            if(elemento.cantidad === 0) {
-                const index = listadoProductos.indexOf(elemento);
-                if(index > -1) {
-                    listadoProductos.splice(index, 1);
-                    localStorage.setItem("carrito", JSON.stringify(listadoProductos));
-                    tdCantidad.closest("tr.tabla").remove();
-                }
+        if(elemento.cantidad === 0) {
+            const index = listadoProductos.indexOf(elemento);
+            if(index > -1) {
+                listadoProductos.splice(index, 1);
+                localStorage.setItem("carrito", JSON.stringify(listadoProductos));
+                tdCantidad.closest("tr.tabla").remove();
             }
-            } else { console.error("Producto no encontrado en el array."); 
+        }
+        } else { console.error("Producto no encontrado en el array."); 
 
-            }
+        }
             if (event.target.closest("button.eliminar")) {
                 const id = event.target.closest("tr.tabla").dataset.id;
                 console.log("ID del producto:", id);
